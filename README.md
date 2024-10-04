@@ -1,9 +1,14 @@
 # Ex.No:5 Create Your Own Content Providers to get Contacts details.
+
+
 ## AIM:
+
 To create your own content providers to get contacts details using Android Studio.
+
 ## EQUIPMENTS REQUIRED:
 
 Android Studio(Latest Version)
+
 ## ALGORITHM:
 
 Step 1: Open Android Stdio and then click on File -> New -> New project.
@@ -19,15 +24,33 @@ Step 5: Design layout in activity_main.xml.
 Step 6: Get contacts details and Display details give in MainActivity file.
 
 Step 7: Save and run the application.
-
 ## PROGRAM:
 ```
+/*
 Program to print the contact name and phone number using content providers.
 Developed by: kaushik k
-Registeration Number : 212222040074
-
+Registeration Number :212222040074
+*/
 ```
 ## Mainactivity.java:
+```
+package com.example.ex5;
+import android.support.v7.app.AppCompatActivity;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    private TextView textViewContacts;
+    int count=0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +94,6 @@ Registeration Number : 212222040074
 
         System.out.println("Total Count of Contacts: "+count);}
 }
-
 ```
 ## Activitymain.XML:
 ```
@@ -124,13 +146,15 @@ Registeration Number : 212222040074
 
 </manifest>![Screenshot 2024-09-17 194637](https://github.com/user-attachments/assets/3e17ead9-eb04-43f3-b6e5-10ddd1dae911)
 
-
 ```
-## OUTPUT
-![image](https://github.com/user-attachments/assets/6cd103f5-da84-44a6-911c-9bff7ce34d97)
+## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/7d03651c-9ec9-4a70-9deb-445bd0023a04)
+![image](https://github.com/user-attachments/assets/fc6194d0-2547-4b2b-b77f-be7c2d0b2899)
+![image](https://github.com/user-attachments/assets/25f9c3b7-d55d-4138-8027-752d06507e34)
+
+
 
 
 ## RESULT
 Thus a Simple Android Application create your own content providers to get contacts details using Android Studio is developed and executed successfully.
+
